@@ -1,0 +1,16 @@
+server:
+  port: ${APPLICATION_PORT:8040}
+
+spring:
+  application:
+    name: telegram-bot-everyone
+
+logging:
+  level:
+    bot: ${LOGGING_LEVEL_APP:debug}
+    org.springframework: ${LOGGING_LEVEL_SPRING:info}
+    com.zaxxer.hikari.pool: error
+
+telegram:
+  token: ${TOKEN:INSERT-TOKEN}
+  username: ${BOT_USERNAME:@vmEveryoneBot}
